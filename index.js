@@ -15,7 +15,7 @@ const date = document.getElementById('date');
 const nameCheck = document.createElement('img');
 nameCheck.classList.add('checkmark');
 const checkMarks = document.querySelectorAll('.checkmark')
-nameCheck.src = "/images/greencheckmark.png";
+nameCheck.src = "images/greencheckmark.png";
 nameCheck.alt = 'checkmark';
 const emailCheck = nameCheck.cloneNode(true);
 const phoneCheck = nameCheck.cloneNode(true);
