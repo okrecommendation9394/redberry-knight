@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Redberry Knight</title>
+</head>
+<body>
+    <section class="section section_active">
+    <header class="header">
+        <div class="logo">
+            <img src="images/Vector.png" alt="logo_cup" class="cup">
+            <img src="images/Redberry Knight Cup.png" alt="redberry Knight Cup" class="logo_txt">
+        </div>
+    </header>
+    <div class="background_img"></div>
+    <div class="rectangle1">
+        <h1 class="txt_part1" src="">CHESS SAYS</h1>
+        <div class="txt_part2">a lot about</div>
+        <h1 class="txt_part3">who we are</h1>
+
+        <button type="button" class="start_btn next">
+          <div class="btn_content">
+            <div class="btn_txt">Get Started</div>
+            <img  src="images/arrow.png" alt="arrow" class="arrow">
+          </div>
+        </button>
+    </div>
+    <footer>
+        <div class="footer_txt">© 2022 redberry knight cup. All rights reserved.</div>
+    </footer>
+    </section>
+    <section class="section">
+        <header class="header">
+            <div class="logo">
+                <img src="images/Vector.png" alt="logo_cup" class="cup">
+                <img src="images/Redberry Knight Cup.png" alt="redberry knight cup" class="logo_txt">
+            </div>
+        </header>
+        <div class="background_img_personal">
+            <div class="background_img_txt">"when you see a good move,<br>look for a better one"</div>
+            <div class="author1">-emanuel lasker</div>
+        </div>
+        <div class="rectangle2">
+            <h4>Start creating your account</h4>
+            <hr>
+            <!--Progress bar-->
+            <div class="progressbar">
+                <div class="progress" id="progress"></div>
+                <div class="progress_step progress_step_active" data-title="Personal information">1</div>
+                <div class="progress_step" data-title="Chess experience">2</div>
+            </div>
+
+            <div class="heading">
+                <div><b>Personal information</b></div>
+                <div>This is basic informaton fields</div>
+            </div>
+
+            <form action="#" class="form" name="theform">
+                <div class="form_step">
+                    <div class="input_group">
+                        <input type="text" id="firstName" name="firstName" class="input_text" onkeyup="isEmpty()" 
+                        minlength='2'
+                        required>
+                        <label class="form_label">Name<span style="color:red">*</span></label>
+                    </div>
+                    <div class="input_group">
+                        <input type="text" class="input_text" id="email" onkeyup="isEmpty()" required>
+                        <label class="form_label">Email address<span style="color:red">*</span></label>
+                    </div>
+                    <div class="input_group">
+                        <input type="tel" class="input_text" id="phone" onkeyup="isEmpty()" required>
+                        <label class="form_label">Phone number<span style="color:red">*</span></label>
+                    </div>
+                    <div class="input_group">
+                        <input type="text" id ="date" name="phone" class="input_text" onkeyup="isEmpty()" required>
+                        <label for="phone" class="form_label">Date of birth<span style="color:red">*</span></label>
+                    </div>
+                </div>
+                <div class="">
+                    <button type="button" class="btn2 back">back</button>
+                    <button type="button" class="btn1 next" id="personalBtn" disabled> 
+                        <div class="btn1_content">
+                        <div>Next</div>
+                        <img src="images/arrow.png" alt="arrow">
+                        </div>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <footer>
+            <div class="footer_txt">© 2022 redberry knight cup. All rights reserved.</div>
+        </footer>
+    </section>
+    <section class="section">
+        <header class="header">
+            <div class="logo">
+                <img src="images/Vector.png" alt="logo_cup" class="cup">
+                <img src="images/Redberry Knight Cup.png" alt="redberry knight cup" class="logo_txt">
+            </div>
+        </header>
+        <div class="background_img_experience">
+            <div class="background_img_txt2">“Many have become chess masters;<br>
+                no one has become the master of chess.”</div>
+            <div class="author2">- Siegbert Tarrasch</div>
+        </div>
+        <div class="rectangle2">
+            <h4>First step is done, continue to finish onboarding</h4>
+            <hr>
+            <div class="progressbar">
+                <div class="progress" id="progressId"></div>
+                <div class="progress_step" data-title="Personal information"></div>
+                <div class="progress_step progress_step_active" data-title="Chess experience">2</div>
+            </div>
+            <div class="heading">
+                <div><b>Chess experience</b></div>
+                <div>This is basic informaton fields</div>
+            </div>
+            <form onsubmit="return false">
+            <div class="wrapper">
+                <div class="title icon">level of knowledge</div>
+                <ul class="dropdown">
+                    <li class="icon">Beginner</li>
+                    <li class="icon">Intermediate</li>
+                    <li class="icon">Professional</li>
+                </ul>
+            </div>
+            <div class="wrapper_two">
+                <div class="title2 icon2">Choose your character</div>
+                <ul class="dropdown2">
+                    <div class="number_of_options">(Total 4)</div>
+                    <li class="icon2" style="margin-top: 8px" id="magnus"></li>
+                    <li class="icon2" id="nona"></li>
+                    <li class="icon2" id="bobby"></li>
+                    <li class="icon2" id="mikhail"></li>
+                </ul>
+            </div>
+            <div class="radio_content">
+                <p class="radio_text">Have you participated in the Redberry Championship?<span style="color: red">*</span></p>
+                <input type="radio" id="yes" name="yes_no_buttons" value="yes">
+                <label for="yes" id="yes_label">Yes</label>
+                <input type="radio" id="no" name="yes_no_buttons" value="no">
+                <label for="no" id="no_label">No</label>
+            </div>
+            <div class="nextback_buttons">
+                <button type="button" class="btn2 back">back</button>
+                <button type="submit" class="btn1 next" id="complete">
+                    <div class="btn1_content">
+                    <div>Next</div>
+                    <img src="/images/arrow.png" alt="arrow">
+                    </div>
+                </button>
+            </div>
+            </form>
+            
+        </div>
+        <footer>
+            <div class="footer_txt">© 2022 redberry knight cup. All rights reserved.</div>
+        </footer>
+    </section>
+    <section class="section">
+        <header class="header">
+            <div class="logo">
+                <img src="images/Vector.png" alt="logo_cup" class="cup">
+                <img src="images/Redberry Knight Cup.png" alt="redberry knight cup" class="logo_txt">
+            </div>
+        </header>
+        <div class="background_img_last"></div>
+        <div class="rectangle2">
+            <div class="rocket">
+                <img src="images/succsessrocket.png" alt="rocket">
+                <div>Onboarding completed!</div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer_txt">© 2022 redberry knight cup. All rights reserved.</div>
+        </footer>
+    </section>
+    <script src="index.js"></script>  
+</body>
+</html>
